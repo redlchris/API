@@ -50,9 +50,3 @@ for(i in firstEO:lastEO){
 }
 
 
-#a nicer way to pull individual data is from the helper functions, given for reference in the case of EO. 
-#However I couldn't get this to work with a variable for the string name so proceeded with the above
-
-sdmx <- readSDMX(providerId = "OECD", resource = "data", flowRef = "EO86_MAIN",
-                 key = list("GBR", "NAIRU", NULL), start = 1990, end = 2019)
-test<- as.data.frame(sdmx)
